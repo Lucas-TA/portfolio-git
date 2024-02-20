@@ -4,7 +4,7 @@ export default function SideBar() {
     <>
       <aside>
         <img src="https://github.com/lucas-ta.png" alt="Foto de perfil" />
-        <Title>Lucas</Title>
+        <Title fontSize={20}>Lucas</Title>
       </aside>
     </>
   )
