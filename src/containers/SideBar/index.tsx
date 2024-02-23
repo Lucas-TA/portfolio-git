@@ -2,7 +2,10 @@ import Avatar from '../../components/Avatar'
 import Paragraph from '../../components/Paragraph'
 import Title from '../../components/Title'
 import { BtnTheme, Description, SidebarContainer } from './styles'
-export default function SideBar() {
+type Props = {
+  changeTheme: () => void
+}
+export default function SideBar(props: Props) {
   return (
     <>
       <aside>
@@ -15,7 +18,7 @@ export default function SideBar() {
           <Description type="principal" fontSize={12}>
             Engenheiro Front-End
           </Description>
-          <BtnTheme>Trocar Tema</BtnTheme>
+          <BtnTheme onClick={props.changeTheme}>Trocar Tema</BtnTheme>
         </SidebarContainer>
       </aside>
     </>
